@@ -20,7 +20,7 @@ model Todo{
   status TodoStatus
   createAt DateTime @default(now())
   updatedAt DateTime @updatedAt
-  userEmail   String?  @unique
+  userEmail   String? 
   user    User?      @relation(fields:[userEmail], references:[email])
   
   
